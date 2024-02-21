@@ -2,7 +2,7 @@
 // document.write('<p>Estadisticas centro medico ñuñoa</p>');
 
 //Definición de las estructuras de datos
-let traumatologia = [
+const traumatologia = [
     {
         hora: '8:00',
         especialista: 'MARIA PAZ ALTUZARRA',
@@ -53,7 +53,7 @@ let traumatologia = [
         prevision: 'ISAPRE'
     }];
 
-let radiologia = [
+const radiologia = [
     {
         hora: '11:00',
         especialista: 'IGNACIO SCHULZ',
@@ -90,7 +90,7 @@ let radiologia = [
         prevision: 'FONASA'
     }];
 
-let dental = [
+const dental = [
     {
         hora: '8:30',
         especialista: 'ANDREA ZUÑIGA',
@@ -171,15 +171,15 @@ document.write(`<p>Primera atención: ${dental[0].paciente} - ${dental[0].previs
 
 // hay que hacer array genérico
 
-// let especialidad = [radiologia, traumatologia, dental];
+// const especialidad = [radiologia, traumatologia, dental];
 // console.log(especialidad);
 
-let tabla = document.getElementById('tabla');
+const tabla = document.getElementById('tabla');
 let contenidoTabla ='';
 
 function imprimirTabla(especialidad, titulo) {
 
-    let bordeTabla = 'border: 1px solid black;';
+    const bordeTabla = 'border: 1px solid black;';
 
     //POR QUÉ EL TITULO SALE DESPUES DE LA CABECERA DE LA PRIMERA TABLA
     contenidoTabla += `
